@@ -1,0 +1,74 @@
+# PALABRAS RESERVADAS EN PYTHON
+
+# 'False' ES UNA PALABRA RESERVADA QUE REPRESENTA UN VALOR BOOLEANO FALSO
+es_falso = False
+
+# 'None' ES UNA PALABRA RESERVADA QUE REPRESENTA LA AUSENCIA DE VALOR
+valor = None
+
+# 'True' ES UNA PALABRA RESERVADA QUE REPRESENTA UN VALOR BOOLEANO VERDADERO
+es_verdadero = True
+
+# 'and' ES UNA PALABRA RESERVADA QUE SE USA PARA REALIZAR OPERACIONES LÓGICAS 'Y'
+resultado = True and False  # EL RESULTADO SERÁ FALSO
+
+# 'or' ES UNA PALABRA RESERVADA QUE SE USA PARA REALIZAR OPERACIONES LÓGICAS 'O'
+resultado = True or False  # EL RESULTADO SERÁ VERDADERO
+
+# 'not' ES UNA PALABRA RESERVADA QUE SE USA PARA NEGAR UNA EXPRESIÓN
+resultado = not True  # EL RESULTADO SERÁ FALSO
+
+# 'if' SE USA PARA INICIAR UNA ESTRUCTURA CONDICIONAL
+if es_verdadero:  # SI es_verdadero ES VERDADERO, SE EJECUTA EL CÓDIGO
+    print("Es verdadero")
+
+# 'else' SE USA PARA PROPORCIONAR UNA ALTERNATIVA EN UNA ESTRUCTURA CONDICIONAL
+if not es_verdadero:  # SI es_verdadero NO ES VERDADERO, SE EJECUTA EL CÓDIGO
+    print("Es falso")
+else:  # SI NO ES FALSO (ES DECIR, ES VERDADERO), SE EJECUTA ESTO
+    print("Es verdadero")
+
+# 'elif' SE UTILIZA COMO UNA ALTERNATIVA INTERMEDIA EN UNA ESTRUCTURA CONDICIONAL
+x = 10
+if x > 10:
+    print("Mayor que 10")
+elif x == 10:  # SI x ES IGUAL A 10, SE EJECUTA ESTE BLOQUE
+    print("Es igual a 10")
+else:
+    print("Menor que 10")
+
+# 'for' SE UTILIZA PARA ITERAR SOBRE UNA SECUENCIA (COMO UNA LISTA)
+for i in range(5):  # ITERA DESDE 0 HASTA 4
+    print(i)  # IMPRIME LOS NÚMEROS DEL 0 AL 4
+
+# 'while' SE UTILIZA PARA REALIZAR UNA ITERACIÓN MIENTRAS UNA CONDICIÓN SEA VERDADERA
+contador = 0
+while contador < 5:  # MIENTRAS contador SEA MENOR QUE 5
+    print(contador)
+    contador += 1  # AUMENTA 'contador' EN 1 CADA VEZ
+
+# 'break' SE UTILIZA PARA SALIR DE UN BUCLE ANTERIOR (TANTO 'for' COMO 'while')
+for i in range(10):
+    if i == 5:  # SI i LLEGA A 5, SALIMOS DEL BUCLE
+        break
+    print(i)  # SE IMPRIMEN LOS NÚMEROS DEL 0 AL 4
+
+# 'continue' SE UTILIZA PARA SALTAR A LA SIGUIENTE ITERACIÓN EN UN BUCLE
+for i in range(5):
+    if i == 3:  # SI i ES 3, SE SALTA ESTA ITERACIÓN
+        continue
+    print(i)  # SE IMPRIMEN LOS NÚMEROS DEL 0 AL 4, EXCEPTO EL 3
+
+# 'def' SE UTILIZA PARA DEFINIR UNA FUNCIÓN
+def saludar():  # DEFINIMOS UNA FUNCIÓN LLAMADA 'saludar'
+    print("¡Hola!")
+
+saludar()  # LLAMAMOS A LA FUNCIÓN 'saludar'
+
+# 'return' SE UTILIZA PARA DEVOLVER UN VALOR DESDE UNA FUNCIÓN
+def suma(a, b):
+    return a + b  # DEVUELVE LA SUMA DE 'a' Y 'b'
+
+resultado = suma(5, 3)  # ASIGNAMOS EL RESULTADO DE LA FUNCIÓN A 'resultado'
+print(resultado)  # IMPRIME 8
+

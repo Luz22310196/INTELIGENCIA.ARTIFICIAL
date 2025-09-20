@@ -1,0 +1,41 @@
+# PARTE 1: ENTRADA DE DATOS (INPUT)
+
+# LA FUNCIÓN input() SE UTILIZA PARA LEER DATOS DEL USUARIO
+
+# SOLICITAMOS AL USUARIO QUE INGRESE SU NOMBRE
+nombre = input("¿Cuál es tu nombre? ")  # EL USUARIO INGRESA SU NOMBRE
+print(f"Hola, {nombre}!")  # IMPRIME UN MENSAJE DE BIENVENIDA
+
+# SOLICITAMOS AL USUARIO QUE INGRESE SU EDAD
+edad = input("¿Cuántos años tienes? ")  # EL USUARIO INGRESA SU EDAD (COMO CADENA)
+# COMO input() DEVUELVE UNA CADENA, NECESITAMOS CONVERTIRLA A UN ENTERO
+edad = int(edad)  # CONVERTIMOS LA EDAD A UN ENTERO
+print(f"Tienes {edad} años.")  # IMPRIME LA EDAD DEL USUARIO
+
+# PARTE 2: SALIDA DE DATOS (OUTPUT)
+
+# LA FUNCIÓN print() SE UTILIZA PARA IMPRIMIR DATOS EN LA CONSOLA
+
+# IMPRIMIMOS UN MENSAJE SIMPLE
+print("¡Bienvenido al curso de Python!")  # MENSAJE DE BIENVENIDA
+
+# IMPRIMIMOS UNA VARIABLE CON TEXTO
+nombre = "María"  # DEFINIMOS UNA VARIABLE CON EL NOMBRE "María"
+print("Mi nombre es", nombre)  # IMPRIME "Mi nombre es María"
+
+# CONCATECONAMOS CADENAS
+apellido = "Pérez"  # DEFINIMOS UNA VARIABLE CON EL APELLIDO "Pérez"
+print("Mi nombre completo es " + nombre + " " + apellido)  # CONCATENAMOS Y MOSTRAMOS EL NOMBRE COMPLETO
+
+# UTILIZANDO F-STRING PARA FORMATEAR LA SALIDA
+edad = 30  # DEFINIMOS UNA VARIABLE CON LA EDAD
+print(f"Tengo {edad} años.")  # IMPRIME "Tengo 30 años" UTILIZANDO F-STRING
+
+# PARTE 3: OTRA FORMA DE ENTRADA Y SALIDA CON input() Y print()
+
+# EJEMPLO DE SOLICITAR UNA OPERACIÓN Y CALCULAR EL RESULTADO
+num1 = float(input("Introduce un número: "))  # LEEMOS UN NÚMERO COMO FLOTANTE
+num2 = float(input("Introduce otro número: "))  # LEEMOS OTRO NÚMERO COMO FLOTANTE
+resultado = num1 + num2  # SUMAMOS LOS DOS NÚMEROS
+print(f"El resultado de la suma es: {resultado}")  # MOSTRAMOS EL RESULTADO
+
